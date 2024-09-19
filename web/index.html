@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muzej</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/section1.css" />
+    <link rel="stylesheet" href="assets/css/section2.css" />
+    <link rel="stylesheet" href="assets/css/section3.css" />
+    <link rel="stylesheet" href="assets/css/section4.css" />
+    <link rel="stylesheet" href="assets/css/section5.css" />
+    <link rel="stylesheet" href="assets/css/colorguess.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body style="background: #010a17;">
+    <section id="rtp" style="background: #021329;">
+      <div class="background-img">
+        <div class="container">
+          <div class="flex-sec-main">
+            <img class="svg-logo" src="assets/img/logo.svg">
+            <h1 class="main-heading-main">
+              Ready <br />
+              to play?
+            </h1>
+            <button class="btn start-button-main" id="redirectButton">
+              press any button
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pickGame" style="background: #010a17; display: none">
+      <div class="background-img">
+        <div class="container">
+          <div class="flex-sec">
+            <img class="svg-logo" src="assets/img/logo.svg">
+            <h1 class="main-heading-gs">Pick a game</h1>
+            <div class="row w-100">
+              <div class="col-md-3">
+                <div
+                  class="game-card"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <img src="./assets/img/arrow_blue.png" class="game-img" alt="" />
+                  <h2 class="game-card-title">
+                    Color <br />
+                    Game
+                  </h2>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div
+                  class="game-card"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <img
+                    src="./assets/img/arrow_yellow.png"
+                    class="game-img"
+                    alt=""
+                  />
+                  <h2 class="game-card-title">
+                    Impossible <br />
+                    Way
+                  </h2>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="game-card" data-aos="fade-up">
+                  <img
+                    src="./assets/img/arrow_red.png"
+                    class="game-img"
+                    alt=""
+                  />
+                  <h2 class="game-card-title">
+                    Choose Language
+                  </h2>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="game-card" data-aos="fade-up">
+                  <img
+                    src="./assets/img/arrow_green.png"
+                    class="game-img"
+                    alt=""
+                  />
+                  <h2 class="game-card-title">
+                    Color <br />
+                    Quiz
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="select-language" style="background: #010a17; display: none;">
+      <div class="background-img">
+        <div class="container">
+          <div class="flex-sec-lan">
+            <img class="svg-logo" src="assets/img/logo.svg">
+            <div class="row justify-content-between w-100">
+              <div class="col-md-4 align-self-end">
+                <h2 class="lang-text">SELECT LANGUAGE</h2>
+              </div>
+              <div class="col-md-6 d-flex flex-column gap-3">
+                <div class="option-card-lan">
+                  <img src="assets/img/button_blue.png" style="width: 25%" alt="" />
+                  <h2 class="game-card-title">ENGLISH</h2>
+                </div>
+                <div class="option-card">
+                  <img
+                    src="assets/img/button_yellow.png"
+                    style="width: 25%"
+                    alt=""
+                  />
+                  <h2 class="game-card-title">GERMAN</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="htp_cg" style="background: #010a17; display: none">
+      <div class="background-img">
+        <div class="position-relative container">
+          <div class="flex-sec">
+            <img class="svg-logo" src="assets/img/logo.svg">
+            <div class="row justify-content-between w-100">
+              <div class="col-md-4 align-self-end">
+                <div class="game-title">Color game</div>
+                <h2 class="main-heading">HOW TO PLAY</h2>
+                <p class="para">
+                  Choose the color written as a word as quickly as possible.
+                  Ignore the background color and the font color; they are
+                  designed to mislead you!
+                </p>
+                <button class="btn start-button" id="redirectButton">
+                  Press any button to start
+                </button>
+              </div>
+              <div class="col-md-7">
+                <div class="color-card">Red</div>
+                <div class="skewed-card">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <a href="#">
+                        <img
+                          src="./assets/img/button_blue.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        src="./assets/img/button_yellow.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        src="./assets/img/button_red.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-md-3 position-relative">
+                      <img
+                        src="./assets/img/button_green.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/img/Vector 65.png"
+                        class="arrow-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="htp_quiz" style="background: #010a17; display: none">
+      <div class="background-img">
+        <div class="position-relative container">
+          <div class="flex-sec">
+            <img class="svg-logo" src="assets/img/logo.svg">
+            <div class="row justify-content-between w-100">
+              <div class="col-md-4 align-self-end">
+                <div class="game-title">Color Quiz</div>
+                <h2 class="main-heading">HOW TO PLAY</h2>
+                <p class="para">
+                  Choose the correct answer!
+                </p>
+                <button class="btn start-button" id="redirectButton">
+                  Press any button to start
+                </button>
+              </div>
+              <div class="col-md-7">
+                <div class="color-card tr"><img class="rounded-image" src="assets/img/quiz.png"/></div>
+                <div class="skewed-card">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <a href="#">
+                        <img
+                          src="./assets/img/button_blue.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        src="./assets/img/button_yellow.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-md-3 position-relative">
+                      <img
+                        src="./assets/img/button_red.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/img/Vector 65.png"
+                        class="arrow-img"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        src="./assets/img/button_green.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="game-result" style="background: #010a17; display: none;">
+      <div class="background-img">
+        <div class="container">
+          <div class="flex-sec">
+            <img class="svg-logo" src="assets/img/logo.svg">
+            <div class="row justify-content-between w-100">
+              <div class="col-md-4 align-self-end">
+                <h2 class="complement-text">Great job 🎉</h2>
+                <span class="span-text">You correctly answered</span>
+                <h1 class="game-result" id="score">10</h1>
+              </div>
+              <div class="col-md-6 d-flex flex-column gap-3">
+                <div class="option-card">
+                  <img
+                    src="./assets/img/button_blue.png"
+                    style="width: 25%"
+                    alt=""
+                  />
+                  <h2 class="game-card-title">Main menu</h2>
+                </div>
+                <div class="option-card">
+                  <img
+                    src="./assets/img/button_red.png"
+                    style="width: 25%"
+                    alt=""
+                  />
+                  <h2 class="game-card-title">RETRY</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impossible-way" style="background: #010a17; display: none; flex-direction: column; justify-content: center; align-items: center; height:100%;">
+      <div class="row m-0 cover-screen" style="padding-top:25vh;">
+        <div class="col-md-6">
+          <img
+            src="https://img.freepik.com/free-photo/digital-art-beautiful-mountains_23-2151123686.jpg"
+            style="width:100%; object-fit: cover"
+          />
+        </div>
+        <div class="col-md-6">
+          <div id="impossible-shapes-container" style="width:100%; height:50vh; background-color: rgb(219, 229, 239)">
+            <!-- canvas here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="body-cg" id="color_game" style="display: none;">
+      <div class="container-cg" id="container-cg">
+        <div class="text-section-cg" id="text-section-cg">
+          <div class="content-cg">
+            <h1 id="colorText" style="font-size: 180px;">Color</h1>
+          </div>
+        </div>
+      </div>
+      <audio id="correct" style="display: none;">
+        <source src="assets/audio/correct.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="incorrect" style="display: none;">
+        <source src="assets/audio/incorrect.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="end" style="display: none;">
+        <source src="assets/audio/end.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+    <section class="body-cg" id="quiz_game" style="display: none;">
+      <img id="cq1" class="full-cover" src="assets/img/cq1.png"/>
+      <img id="cq2" class="full-cover" src="assets/img/cq2.png"/>
+      <img id="cq3" class="full-cover" src="assets/img/cq3.png"/>
+      <img id="cq4" class="full-cover" src="assets/img/cq4.png"/>
+      <img id="cq5" class="full-cover" src="assets/img/cq5.png"/>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/mqttws31.js"></script>
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "./assets/js/three.js/build/three.module.js"
+				}
+			}
+		</script>
+    <script src="assets/js/impossible-shapes.js" type="module"></script>
+    <script src="assets/js/game.js" type="module"></script>
+  </body>
+</html>

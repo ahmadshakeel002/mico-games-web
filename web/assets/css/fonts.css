@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Fontspring-DEMO-proximanovacond-regular.otf")
+    format("opentype");
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Fontspring-DEMO-proximanova-medium.otf") format("opentype");
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Fontspring-DEMO-proximanova-semibold.otf")
+    format("opentype");
+  font-weight: 600; /* Semi Bold weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Fontspring-DEMO-proximanova-bold.otf") format("opentype");
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Fontspring-DEMO-proximanovacond-extrabold.otf")
+    format("opentype");
+  font-weight: 800; /* Extra Bold weight */
+  font-style: normal;
+}
+
+/* Removed duplicate font weight 700 declaration */

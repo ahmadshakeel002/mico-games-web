@@ -1,0 +1,63 @@
+.flex-sec {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  padding-bottom: 3rem;
+}
+.svg-logo {
+  position: absolute;
+  left: 1%;
+  top: 4%;
+  width: 60px;
+  height: 90px;
+}
+.option-card {
+  background: #021329;
+  border-radius: 50px;
+  aspect-ratio: 3/1.35;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.game-card-title {
+  font-size: clamp(1.5rem, 1rem + 1.5vw, 3.5rem);
+  font-weight: 800;
+  line-height: clamp(1.5rem, 1rem + 2vw, 3.5rem);
+  letter-spacing: -0.019em;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+.game-result {
+  font-size: 180px;
+  font-weight: 800;
+  line-height: 170px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+.span-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.4px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #ffffff;
+}
+.complement-text {
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 93.6px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}

@@ -1,0 +1,142 @@
+body {
+    font-family: "Proxima Nova", sans-serif;
+  }
+  .background-img {
+    background: radial-gradient(
+        33.98% 64.77% at 47.6% 46.9%,
+        rgba(1, 10, 23, 0) 13%,
+        rgba(1, 10, 23, 0.64) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+    background-image: url("../img/path27.png");
+  }
+  .flex-sec {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    padding-bottom: 3rem;
+  }
+  .game-title {
+    width: fit-content;
+    padding: 0.3rem 1.75rem 0.3rem 1.75rem;
+    border-radius: 80px;
+    border: 2px solid #fff;
+    /* font-family: Proxima Nova; */
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .main-heading {
+    /* font-family: Proxima Nova; */
+    font-size: 58px;
+    font-weight: 900;
+    line-height: 90px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 0.75rem;
+  }
+  .para {
+    /* font-family: Proxima Nova; */
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+  .color-card {
+    background: #004be599;
+    width: 100%;
+    aspect-ratio: 3/1.25;
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 152px;
+    font-weight: 900;
+    line-height: 228px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #00ce45;
+    margin-bottom: 4rem;
+  }
+  .skewed-card {
+    background: #021329;
+    /* border-radius: 80px; */
+    padding: 37px 60px 50px 60px;
+    border-radius: 80px 80px 80px 80px; /* Creates rounded corners on the bottom */
+    /* overflow: hidden; */
+  }
+  .arrow-img {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moveArrow 1s infinite ease-in-out;
+  }
+
+  .start-button,
+  .start-button:hover {
+    width: auto;
+    height: fit-content;
+    padding: 15px 35px;
+    border-radius: 80px;
+    background: #021329;
+    /* font-size: clamp(1rem, 0.75rem + 1vw, 2rem); */
+    font-size: 20px;
+    font-weight: 800;
+    /* line-height: clamp(1rem, 0.75rem + 1vw, 2rem); */
+    letter-spacing: -0.019em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    animation: fadeOut 3s ease-out infinite;
+  }
+  .svg-logo {
+    position: absolute;
+    left: 1%;
+    top: 4%;
+    width: 60px;
+    height: 90px;
+  }
+
+  /* Define the keyframes for the opacity decrease */
+  @keyframes fadeOut {
+    0% {
+      opacity: 1; /* Start with full opacity */
+    }
+    25% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 0.1; /* End with no opacity */
+    }
+    75% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes moveArrow {
+    0% {
+      transform: translateX(-50%) translateY(-10px);
+    }
+    50% {
+      transform: translateX(-50%) translateY(10px);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-10px);
+    }
+  }
