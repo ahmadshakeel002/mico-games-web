@@ -86,8 +86,10 @@ function animate() {
 	renderer.render(scene, camera);
 }
 var count = 0;
-var points = [[{ x:5, y:-9, z:4 },{ x:-9, y:-9, z:4 }],[{ x:-10, y:-12, z:10 },{ x:-10, y:-12, z:4 },{ x:2, y:-12, z:4 },{ x:2, y:-3, z:4 }]];
-var noOfMoves = [1,3];
+var points = [[{ x:5, y:-9, z:4 },{ x:-9, y:-9, z:4 }],
+				[{ x:-10, y:-12, z:10 },{ x:-10, y:-12, z:4 },{ x:2, y:-12, z:4 },{ x:2, y:-3, z:4 }],
+				[{ x:2, y:-4, z:3 },{ x:2, y:-4, z:-5 },{ x:2, y:-10, z:-5 },{ x:2, y:-10, z:0 },{ x:7, y:-10, z:0 },{ x:7, y:-4, z:0 }]];
+				
 // Function to move the corepart object
 export function moveCorepart() {
   console.log("clicked");
@@ -118,7 +120,7 @@ export function moveCorepart() {
 			.onComplete(() => {
 				// Action to take when the tween ends
 				console.log('Tween has completed');
-				if(move>=noOfMoves[stage-1])
+				if(move>=points[stage-1].length-1)
 				{
 					stage++;
 					move=0;
@@ -131,7 +133,7 @@ export function moveCorepart() {
 	}
 }
 
-document.addEventListener('click', moveCorepart);
+//document.addEventListener('click', moveCorepart);
 
 function resize_canvas(){
 	camera.aspect = $('#impossible-shapes-container').innerWidth() / $('#impossible-shapes-container').innerHeight();
