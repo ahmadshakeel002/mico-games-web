@@ -146,7 +146,7 @@ function process_cg_move(button)
 function process_quiz_move(button)
 {
     try{
-        last_ping = new Date();
+        var last_ping = new Date();
         if(button==="start")
         {
             stage=0;
