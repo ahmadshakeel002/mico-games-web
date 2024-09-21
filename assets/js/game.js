@@ -35,11 +35,11 @@ function onMessageArrived(message){
         page="select-language";
         AOS.init();
     }else if(page==="select-language" && button==="blue"){
-        $('select-language').hide();
+        $('#select-language').hide();
         $('#rtp').show();
         page="rtp";
     }else if(page==="select-language" && button==="yellow"){
-        $('select-language').hide();
+        $('#select-language').hide();
         $('#rtp').show();
         page="rtp";
     }else if(page==="pickGame" && button==="blue"){
@@ -53,7 +53,6 @@ function onMessageArrived(message){
         $('#color_game').show();
         page="color_game";
     }else if(page==="color_game"){
-        var last_ping = new Date();
         process_cg_move(button);
     }else if(page==="cg_score" && button==="blue"){
         $('#game-result').hide();
@@ -61,7 +60,6 @@ function onMessageArrived(message){
         page="rtp";
     }else if(page==="cg_score" && button==="red"){
         $('#game-result').hide();
-        var last_ping = new Date();
         process_cg_move("start");
         $('#color_game').show();
         page="color_game";
@@ -100,7 +98,6 @@ function onMessageArrived(message){
 function process_cg_move(button)
 {
     try{
-        last_ping = new Date();
         if(button==="start")
         {
             stage=0; 
@@ -133,7 +130,7 @@ function process_cg_move(button)
         textBGColor = textBackgroundColors[random1];
         cg_answer = colorNames[random1];
         textColorName = colorNames[random2];
-        screenBG = textBackgroundColors[random3];
+        var screenBG = textBackgroundColors[random3];
         colorIndex = random1;
         $('#text-section-cg').css("background-color",screenBG);
         $('#colorText').css("color",textBGColor);
@@ -146,7 +143,6 @@ function process_cg_move(button)
 function process_quiz_move(button)
 {
     try{
-        var last_ping = new Date();
         if(button==="start")
         {
             stage=0;
